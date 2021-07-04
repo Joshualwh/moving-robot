@@ -10,7 +10,7 @@ rplidar Tutorial:  https://github.com/robopeak/rplidar_ros/wiki
 
 ## Build rplidar ros package  
 
-git clone   
+clone the repository  
 cd catkin_ws  
 catkin_make  
 
