@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="prototype_assem1" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find prototype_assem1)/urdf/materials.xacro" />
+<!--<xacro:include filename="$(find rur_detailed_description)/urdf/rur_detailed.trans" />-->
+
+<!--xacro:include filename="$(find simulation)/gazebo/robot_sim_detailed_materials.gazebo" />-->
+<!--xacro:include filename="$(find simulation)/gazebo/robot_sim_detailed_physics.gazebo" />-->
+<xacro:include filename="$(find prototype_assem1)/gazebo/robot_sim_detailed_plugins.gazebo" />
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.040103 0.11606 0.11548"
+        rpy="0 0 0" />
+      <mass
+        value="1.4768" />
+      <inertia
+        ixx="0.00073805"
+        ixy="0.00015827"
+        ixz="7.4015E-06"
+        iyy="0.001487"
+        iyz="7.0047E-08"
+        izz="0.0012289" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://prototype_assem1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://prototype_assem1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_front">
+    <inertial>
+      <origin
+        xyz="0 -0.005 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.019174" />
+      <inertia
+        ixx="3.1442E-06"
+        ixy="-4.0923E-23"
+        ixz="-6.7692E-23"
+        iyy="5.9755E-06"
+        iyz="-2.0116E-23"
+        izz="3.1442E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://prototype_assem1/meshes/left_front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://prototype_assem1/meshes/left_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_front_joint"
+    type="continuous">
+    <origin
+      xyz="0.11247 -0.055978 0.079777"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_front" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="left_back">
+    <inertial>
+      <origin
+        xyz="0 -0.005 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.019174" />
+      <inertia
+        ixx="3.1442E-06"
+        ixy="-7.2839E-24"
+        ixz="1.3294E-25"
+        iyy="5.9755E-06"
+        iyz="-2.0805E-23"
+        izz="3.1442E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://prototype_assem1/meshes/left_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://prototype_assem1/meshes/left_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_back_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0075297 -0.055978 0.079777"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_back" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_front">
+    <inertial>
+      <origin
+        xyz="-4.1633E-17 0.005 1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.019174" />
+      <inertia
+        ixx="3.1442E-06"
+        ixy="-9.9033E-21"
+        ixz="-3.673E-35"
+        iyy="5.9755E-06"
+        iyz="9.9041E-21"
+        izz="3.1442E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://prototype_assem1/meshes/right_front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://prototype_assem1/meshes/right_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_front_joint"
+    type="continuous">
+    <origin
+      xyz="0.11247 -0.17598 0.079777"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_front" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_back">
+    <inertial>
+      <origin
+        xyz="-1.8215E-17 0.005 1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.019174" />
+      <inertia
+        ixx="3.1442E-06"
+        ixy="-9.8297E-21"
+        ixz="-3.4582E-35"
+        iyy="5.9755E-06"
+        iyz="9.9033E-21"
+        izz="3.1442E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://prototype_assem1/meshes/right_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://prototype_assem1/meshes/right_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_back_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0075297 -0.17598 0.079777"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_back" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>

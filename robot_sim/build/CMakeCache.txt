@@ -352,6 +352,12 @@ Project_BINARY_DIR:STATIC=/home/joshualing/Documents/moving-robot/robot_sim/buil
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/home/joshualing/Documents/moving-robot/robot_sim/src
 
+//Value Computed by CMake
+Prototype_Assem_1_BINARY_DIR:STATIC=/home/joshualing/Documents/moving-robot/robot_sim/build/Prototype_Assem_1
+
+//Value Computed by CMake
+Prototype_Assem_1_SOURCE_DIR:STATIC=/home/joshualing/Documents/moving-robot/robot_sim/src/Prototype_Assem_1
+
 //Path to a library.
 RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 
@@ -427,6 +433,15 @@ gtest_hide_internal_symbols:BOOL=OFF
 
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
+
+//Value Computed by CMake
+prototype_assem1_BINARY_DIR:STATIC=/home/joshualing/Documents/moving-robot/robot_sim/build/prototype_assem1
+
+//Value Computed by CMake
+prototype_assem1_SOURCE_DIR:STATIC=/home/joshualing/Documents/moving-robot/robot_sim/src/prototype_assem1
+
+//The directory containing a CMake configuration file for roslaunch.
+roslaunch_DIR:PATH=/opt/ros/noetic/share/roslaunch/cmake
 
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/noetic/share/rospy/cmake
@@ -585,7 +600,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

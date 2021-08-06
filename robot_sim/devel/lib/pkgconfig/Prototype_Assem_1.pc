@@ -1,0 +1,8 @@
+prefix=/home/joshualing/Documents/moving-robot/robot_sim/devel
+
+Name: Prototype_Assem_1
+Description: Description of Prototype_Assem_1
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
