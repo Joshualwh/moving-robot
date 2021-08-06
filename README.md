@@ -1,7 +1,13 @@
 # moving-robot
 
-$ source /opt/ros/noetic/setup.bash
+Everytime starting a new terminal:
+1) $ source /opt/ros/noetic/setup.bash
+2) $ source ~/Documents/moving-robot/robot_sim/devel/setup.bash (for Joshua's PC only)
+   (Generally: $ source ~/(directory to folder)/moving-robot/robot_sim/devel/setup.bash)
 
-You will need to run this command on every new shell you open to have access to the ROS commands, unless you add this line to your .bashrc. This process allows you to install several ROS distributions (e.g. indigo and kinetic) on the same computer and switch between them.
+Things to note:
+1) prototype_assem1.xacro file base link needs to change xyz for correct orientation.
+    Possible solutions: Need to set the exact correct coordinate systems based on the origin given from the start during Solidworks Assembly.
 
-$ source ~/Documents/moving-robot/robot_sim/devel/setup.bash
+2) Model in Gazebo tends to move/jiggle by itself.
+    Possible solutions: Unknown. Still finding. 

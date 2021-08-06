@@ -35,14 +35,6 @@
 /home/joshualing/Documents/moving-robot/robot_sim/build/gtest/googletest/CMakeFiles/test.dir
 /home/joshualing/Documents/moving-robot/robot_sim/build/gtest/googletest/CMakeFiles/gtest_main.dir
 /home/joshualing/Documents/moving-robot/robot_sim/build/gtest/googletest/CMakeFiles/gtest.dir
-/home/joshualing/Documents/moving-robot/robot_sim/build/simulation/CMakeFiles/install/strip.dir
-/home/joshualing/Documents/moving-robot/robot_sim/build/simulation/CMakeFiles/install/local.dir
-/home/joshualing/Documents/moving-robot/robot_sim/build/simulation/CMakeFiles/install.dir
-/home/joshualing/Documents/moving-robot/robot_sim/build/simulation/CMakeFiles/list_install_components.dir
-/home/joshualing/Documents/moving-robot/robot_sim/build/simulation/CMakeFiles/rebuild_cache.dir
-/home/joshualing/Documents/moving-robot/robot_sim/build/simulation/CMakeFiles/edit_cache.dir
-/home/joshualing/Documents/moving-robot/robot_sim/build/simulation/CMakeFiles/test.dir
-/home/joshualing/Documents/moving-robot/robot_sim/build/simulation/CMakeFiles/_catkin_empty_exported_target.dir
 /home/joshualing/Documents/moving-robot/robot_sim/build/prototype_assem1/CMakeFiles/install/strip.dir
 /home/joshualing/Documents/moving-robot/robot_sim/build/prototype_assem1/CMakeFiles/install/local.dir
 /home/joshualing/Documents/moving-robot/robot_sim/build/prototype_assem1/CMakeFiles/install.dir
@@ -50,3 +42,4 @@
 /home/joshualing/Documents/moving-robot/robot_sim/build/prototype_assem1/CMakeFiles/rebuild_cache.dir
 /home/joshualing/Documents/moving-robot/robot_sim/build/prototype_assem1/CMakeFiles/edit_cache.dir
 /home/joshualing/Documents/moving-robot/robot_sim/build/prototype_assem1/CMakeFiles/test.dir
+/home/joshualing/Documents/moving-robot/robot_sim/build/prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir

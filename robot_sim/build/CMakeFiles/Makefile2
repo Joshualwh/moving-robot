@@ -54,14 +54,12 @@ CMAKE_BINARY_DIR = /home/joshualing/Documents/moving-robot/robot_sim/build
 
 # The main recursive "all" target.
 all: gtest/all
-all: simulation/all
 all: prototype_assem1/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
-preinstall: simulation/preinstall
 preinstall: prototype_assem1/preinstall
 
 .PHONY : preinstall
@@ -73,7 +71,6 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
-clean: simulation/clean
 clean: prototype_assem1/clean
 
 .PHONY : clean
@@ -149,27 +146,9 @@ prototype_assem1/preinstall:
 .PHONY : prototype_assem1/preinstall
 
 # Recursive "clean" directory target.
-prototype_assem1/clean:
+prototype_assem1/clean: prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 .PHONY : prototype_assem1/clean
-
-#=============================================================================
-# Directory level rules for directory simulation
-
-# Recursive "all" directory target.
-simulation/all:
-
-.PHONY : simulation/all
-
-# Recursive "preinstall" directory target.
-simulation/preinstall:
-
-.PHONY : simulation/preinstall
-
-# Recursive "clean" directory target.
-simulation/clean: simulation/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-.PHONY : simulation/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
@@ -416,31 +395,31 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target simulation/CMakeFiles/_catkin_empty_exported_target.dir
+# Target rules for target prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir
 
 # All Build rule for target.
-simulation/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f simulation/CMakeFiles/_catkin_empty_exported_target.dir/build.make simulation/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f simulation/CMakeFiles/_catkin_empty_exported_target.dir/build.make simulation/CMakeFiles/_catkin_empty_exported_target.dir/build
+prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/build.make prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/build.make prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshualing/Documents/moving-robot/robot_sim/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : simulation/CMakeFiles/_catkin_empty_exported_target.dir/all
+.PHONY : prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
-simulation/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshualing/Documents/moving-robot/robot_sim/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 simulation/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshualing/Documents/moving-robot/robot_sim/build/CMakeFiles 0
-.PHONY : simulation/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: simulation/CMakeFiles/_catkin_empty_exported_target.dir/rule
+_catkin_empty_exported_target: prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 .PHONY : _catkin_empty_exported_target
 
 # clean rule for target.
-simulation/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f simulation/CMakeFiles/_catkin_empty_exported_target.dir/build.make simulation/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : simulation/CMakeFiles/_catkin_empty_exported_target.dir/clean
+prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/build.make prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

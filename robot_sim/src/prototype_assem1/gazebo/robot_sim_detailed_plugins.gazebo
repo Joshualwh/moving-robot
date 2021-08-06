@@ -14,10 +14,10 @@
     <updateRate>20</updateRate>
     <leftJoint>left_front_joint</leftJoint>
     <rightJoint>right_front_joint</rightJoint>
-    <wheelSeparation>0.15</wheelSeparation>
-    <wheelDiameter>0.10</wheelDiameter>
+    <wheelSeparation>0.20</wheelSeparation>
+    <wheelDiameter>0.1</wheelDiameter>
     <wheelAcceleration>1.0</wheelAcceleration>
-    <wheelTorque>20</wheelTorque>
+    <wheelTorque>10</wheelTorque>
     <commandTopic>cmd_vel</commandTopic>
     <odometryTopic>odom</odometryTopic>
     <odometryFrame>odom</odometryFrame>
