@@ -1,8 +1,0 @@
-prefix=/home/joshualing/Documents/moving-robot/robot_sim/install
-
-Name: prototype_assem1
-Description: Description of prototype_assem1
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

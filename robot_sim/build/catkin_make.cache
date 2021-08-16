@@ -1,2 +1,0 @@
-full_assembly
--DCATKIN_DEVEL_PREFIX=/home/joshualing/Documents/moving-robot/robot_sim/devel -DCMAKE_INSTALL_PREFIX=/home/joshualing/Documents/moving-robot/robot_sim/install -G Unix Makefiles
