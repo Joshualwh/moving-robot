@@ -1,13 +1,20 @@
 # moving-robot
 
-Everytime starting a new terminal:
-1) $ source /opt/ros/noetic/setup.bash
-2) $ source ~/Documents/moving-robot/robot_sim/devel/setup.bash (for Joshua's PC only)
-   (Generally: $ source ~/(directory to folder)/moving-robot/robot_sim/devel/setup.bash)
+## Prerequisites
 
-Things to note:
-1) prototype_assem1.xacro file base link needs to change xyz for correct orientation.
-    Possible solutions: Need to set the exact correct coordinate systems based on the origin given from the start during Solidworks Assembly.
+1. ROS. [title](http://wiki.ros.org/ROS/Tutorials)
+2. Gazebo. [title](http://gazebosim.org/tutorials)
+3. Complimentary Websites: [title](https://osrobotics.org/)
 
-2) Model in Gazebo tends to move/jiggle by itself.
-    Possible solutions: Unknown. Still finding. 
+## Configure your .bashrc
+Every time you start a new terminal, the file `~/.bashrc` will be sourced. When you already have an opened terminal, you can source it manually running this command
+
+`source ~/.bashrc`
+
+In order to use ROS, you need to source the ROS setup.bash file, therefore, it's recommended to include the previous command in your .bashrc file.
+
+`echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc`
+
+## Markdown Cheat Sheet
+
+1. Website: [title](https://www.markdownguide.org/cheat-sheet/)
