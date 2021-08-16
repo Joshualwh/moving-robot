@@ -2,9 +2,9 @@
 
 ## Prerequisites
 
-1. ROS. [title](http://wiki.ros.org/ROS/Tutorials)
-2. Gazebo. [title](http://gazebosim.org/tutorials)
-3. Complimentary Websites: [title](https://osrobotics.org/)
+1. ROS. [http://wiki.ros.org/ROS/Tutorials]
+2. Gazebo. [http://gazebosim.org/tutorials]
+3. Complimentary Websites: [https://osrobotics.org/]
 
 ## Configure your .bashrc
 Every time you start a new terminal, the file `~/.bashrc` will be sourced. When you already have an opened terminal, you can source it manually running this command
@@ -17,4 +17,4 @@ In order to use ROS, you need to source the ROS setup.bash file, therefore, it's
 
 ## Markdown Cheat Sheet
 
-1. Website: [title](https://www.markdownguide.org/cheat-sheet/)
+1. Website: [https://www.markdownguide.org/cheat-sheet/]
