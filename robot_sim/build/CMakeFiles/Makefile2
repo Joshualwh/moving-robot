@@ -54,13 +54,13 @@ CMAKE_BINARY_DIR = /home/joshualing/Documents/moving-robot/robot_sim/build
 
 # The main recursive "all" target.
 all: gtest/all
-all: prototype_assem1/all
+all: full_assembly/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
-preinstall: prototype_assem1/preinstall
+preinstall: full_assembly/preinstall
 
 .PHONY : preinstall
 
@@ -71,9 +71,27 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
-clean: prototype_assem1/clean
+clean: full_assembly/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory full_assembly
+
+# Recursive "all" directory target.
+full_assembly/all:
+
+.PHONY : full_assembly/all
+
+# Recursive "preinstall" directory target.
+full_assembly/preinstall:
+
+.PHONY : full_assembly/preinstall
+
+# Recursive "clean" directory target.
+full_assembly/clean: full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : full_assembly/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -131,24 +149,6 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest_main.dir/clean
 gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 
 .PHONY : gtest/googletest/clean
-
-#=============================================================================
-# Directory level rules for directory prototype_assem1
-
-# Recursive "all" directory target.
-prototype_assem1/all:
-
-.PHONY : prototype_assem1/all
-
-# Recursive "preinstall" directory target.
-prototype_assem1/preinstall:
-
-.PHONY : prototype_assem1/preinstall
-
-# Recursive "clean" directory target.
-prototype_assem1/clean: prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-.PHONY : prototype_assem1/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
@@ -395,31 +395,31 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir
+# Target rules for target full_assembly/CMakeFiles/_catkin_empty_exported_target.dir
 
 # All Build rule for target.
-prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/build.make prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/build.make prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/build
+full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/build.make full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/build.make full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshualing/Documents/moving-robot/robot_sim/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/all
+.PHONY : full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
-prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshualing/Documents/moving-robot/robot_sim/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshualing/Documents/moving-robot/robot_sim/build/CMakeFiles 0
-.PHONY : prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/rule
+_catkin_empty_exported_target: full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 .PHONY : _catkin_empty_exported_target
 
 # clean rule for target.
-prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/build.make prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/clean
+full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/build.make full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

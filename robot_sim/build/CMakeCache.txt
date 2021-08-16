@@ -389,6 +389,12 @@ _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
 //Value Computed by CMake
+full_assembly_BINARY_DIR:STATIC=/home/joshualing/Documents/moving-robot/robot_sim/build/full_assembly
+
+//Value Computed by CMake
+full_assembly_SOURCE_DIR:STATIC=/home/joshualing/Documents/moving-robot/robot_sim/src/full_assembly
+
+//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/joshualing/Documents/moving-robot/robot_sim/build/gtest/googlemock
 
 //Dependencies for the target

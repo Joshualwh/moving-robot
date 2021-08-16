@@ -13,10 +13,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
-  "prototype_assem1/catkin_generated/package.cmake"
+  "full_assembly/catkin_generated/package.cmake"
   "/home/joshualing/Documents/moving-robot/robot_sim/src/CMakeLists.txt"
-  "/home/joshualing/Documents/moving-robot/robot_sim/src/prototype_assem1/CMakeLists.txt"
-  "/home/joshualing/Documents/moving-robot/robot_sim/src/prototype_assem1/package.xml"
+  "/home/joshualing/Documents/moving-robot/robot_sim/src/full_assembly/CMakeLists.txt"
+  "/home/joshualing/Documents/moving-robot/robot_sim/src/full_assembly/package.xml"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
   "/opt/ros/noetic/share/catkin/cmake/assert.cmake"
   "/opt/ros/noetic/share/catkin/cmake/atomic_configure_file.cmake"
@@ -154,7 +154,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "prototype_assem1/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "full_assembly/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -168,5 +168,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "gtest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "prototype_assem1/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
+  "full_assembly/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
   )
