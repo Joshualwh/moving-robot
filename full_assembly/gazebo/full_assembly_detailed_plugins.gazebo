@@ -32,18 +32,18 @@
 
 <!-- ############# LIDAR PLUGIN ############# -->
 
- <gazebo reference="lidar">
+ <gazebo reference="rp_lidar">
     <sensor type="ray" name="rplidar_a1">
       <pose>0 0 0 0 0 0</pose>
-      <visualize>false</visualize>
+      <visualize>true</visualize>
       <update_rate>10</update_rate>
       <ray>
         <scan>
           <horizontal>
             <samples>720</samples>
             <resolution>1</resolution>
-            <min_angle>-2.87979</min_angle>
-            <max_angle>2.87979</max_angle>
+            <min_angle>-3.14159</min_angle>
+            <max_angle>3.14159</max_angle>
           </horizontal>
         </scan>
         <range>
@@ -63,7 +63,7 @@
       </ray>
       <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
         <topicName>/scan</topicName>
-        <frameName>lidar</frameName>
+        <frameName>rp_lidar</frameName>
       </plugin>
     </sensor>
   </gazebo>
