@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>rur_navigation</name>
+  <name>robot_navigation</name>
   <version>1.2.4</version>
   <description>
     The rur_navigation provides roslaunch scripts for starting the navigation.
